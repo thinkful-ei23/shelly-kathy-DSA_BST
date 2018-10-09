@@ -48,7 +48,7 @@ class BinarySearchTree {
 		else if (key > this.key && this.right) {
 			return this.right.find(key);
 		}
-		/* You have search the treen and the item is not in the tree */
+		/* You have search the tree and the item is not in the tree */
 		else {
 			throw new Error('Key Error');
 		}
@@ -117,6 +117,12 @@ class BinarySearchTree {
 			return this;
 		}
 		return this.left._findMin();
+	}
+	_findMax() {
+		if (!this.right) {
+			return this;
+		}
+		return this.right_findMax();
 	}
 }
 
