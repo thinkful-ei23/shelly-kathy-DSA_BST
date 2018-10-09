@@ -4,6 +4,7 @@ const BinarySearchTree = require('./bst.js');
 let bst = new BinarySearchTree;
 
 function main() {
+	// create a bst
 	bst.insert('3', 'C')
 	bst.insert('1', 'A')
 	bst.insert('4', 'D')
@@ -13,6 +14,8 @@ function main() {
 	bst.insert('5', 'E')
 	bst.insert('7', 'G')
 	console.log(bst, 'Grow tree, grow!!');
+
+	
 }
 main();
 
